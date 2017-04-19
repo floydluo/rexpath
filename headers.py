@@ -1,6 +1,6 @@
 import six
 from w3lib.http import headers_dict_to_raw
-from utils import to_unicode
+from .utils import to_unicode
 
 
 # scrapy.utils.datatypes

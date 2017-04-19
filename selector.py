@@ -4,7 +4,7 @@ XPath selectors based on lxml
 
 import warnings
 from parsel import Selector as _ParselSelector
-from utils import object_ref, to_bytes, deprecated
+from .utils import object_ref, to_bytes, deprecated
 
 __all__ = ['Selector', 'SelectorList']
 

@@ -13,13 +13,13 @@ from w3lib.encoding import html_to_unicode, \
                            html_body_declared_encoding, \
                            http_content_type_encoding
 
-from utils import get_base_url, \
+from .utils import get_base_url, \
                   memoizemethod_noargs, \
                   to_native_str, \
                   object_ref, \
                   obsolete_setter
 
-from headers import Headers
+from .headers import Headers
 
 
 class Response(object_ref):
@@ -170,7 +170,7 @@ class TextResponse(Response):
 
     @property
     def selector(self):
-        from selector import Selector
+        from .selector import Selector
         if self._cached_selector is None:
             self._cached_selector = Selector(self)
         return self._cached_selector
